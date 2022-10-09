@@ -1,0 +1,11 @@
+name: "My new website"
+output_dir: 'docs'
+output:
+  html_document:
+    theme: lumen
+    highlight: textmate
+    toc: true
+    toc_depth: 5
+    toc_float:
+      collapsed: false
+      number_sections: true
