@@ -1,4 +1,5 @@
-# Star Patterns: https://starpatterns.netlify.app/
+# Star Patterns
+All Patterns are here ->  https://starpatterns.netlify.app/
 
 Star Patterns provide a lot of different types of patterns
 and updating too, it's for learning & practice only.
