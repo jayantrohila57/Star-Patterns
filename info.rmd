@@ -25,20 +25,6 @@ Some of the useful links consider checking.
 
 - Discussion Here -> https://github.com/jayantrohila57/Star-Patterns/discussions
 
-## Code Template For JAVA
-
-- Startup Code for Java users
-
-```
-public class Main {
-    static void Pattern(int n) {
-       // ------ADD YOUR PATTERN HERE-----
-    }
-    public static void main(String[] args) {
-        Pattern(5); //-------LINES OF THE PATTERN------
-        }
-}
-```
 ## About Author
 
 - 👋 Hi there, Jayant Rohila here.

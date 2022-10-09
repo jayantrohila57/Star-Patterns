@@ -33,8 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -47,16 +45,6 @@
   ul.task-list{list-style: none;}
     </style>
 
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
 
 
 
@@ -283,12 +271,6 @@ div.tocify {
   border-radius: 0px;
 }
 
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
 
 </style>
 
@@ -350,20 +332,20 @@ div.tocify {
 </div>
 
 
-<div id="star-patterns" class="section level1">
-<h1>Star Patterns</h1>
-<div id="square" class="section level2 tabset tabset-fade tabset-pills">
-<h2 class="tabset tabset-fade tabset-pills">Square</h2>
-<div id="pattern" class="section level3">
-<h3>Pattern</h3>
+<div id="square" class="section level1 tabset tabset-fade tabset-pills"
+number="1">
+<h1 class="tabset tabset-fade tabset-pills"><span
+class="header-section-number">1</span> Square</h1>
+<div id="pattern" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Pattern</h2>
 <pre><code>* * * * *
 * * * * *
 * * * * *
 * * * * *
 * * * * *</code></pre>
 </div>
-<div id="solution" class="section level3">
-<h3>Solution</h3>
+<div id="solution" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Solution</h2>
 <pre><code>int n=5;
 for (int i = 1; i &lt;= n; i++) {
     for (int j = 1; j &lt;= n; j++) {
@@ -374,18 +356,19 @@ for (int i = 1; i &lt;= n; i++) {
 </div>
 </div>
 <div id="increasing-triangle"
-class="section level2 tabset tabset-fade tabset-pills">
-<h2 class="tabset tabset-fade tabset-pills">Increasing Triangle</h2>
-<div id="pattern-1" class="section level3">
-<h3>Pattern</h3>
+class="section level1 tabset tabset-fade tabset-pills" number="2">
+<h1 class="tabset tabset-fade tabset-pills"><span
+class="header-section-number">2</span> Increasing Triangle</h1>
+<div id="pattern-1" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Pattern</h2>
 <pre><code>*
 * *
 * * *
 * * * *
 * * * * *</code></pre>
 </div>
-<div id="solution-1" class="section level3">
-<h3>Solution</h3>
+<div id="solution-1" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Solution</h2>
 <pre><code>int n=5;
 for (int i = 1; i &lt;= n; i++) {
     for (int j = 1; j &lt;= i; j++) {
@@ -395,27 +378,79 @@ for (int i = 1; i &lt;= n; i++) {
 }</code></pre>
 </div>
 </div>
+<div id="right-sided-triangle"
+class="section level1 tabset tabset-fade tabset-pills" number="3">
+<h1 class="tabset tabset-fade tabset-pills"><span
+class="header-section-number">3</span> Right Sided Triangle</h1>
+<div id="pattern-2" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Pattern</h2>
+<pre><code>          *
+        * *
+      * * *
+    * * * *
+  * * * * *</code></pre>
+</div>
+<div id="solution-2" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Solution</h2>
+<pre><code>int n=5;
+for (int i = 1; i &lt;= n; i++) {
+    for (int j = i; j &lt;= n; j++) {
+        System.out.print(&quot;  &quot;);
+    }
+    for (int j = 1; j &lt;= i; j++) {
+        System.out.print(&quot;* &quot;);
+    }
+    System.out.println();
+}</code></pre>
+</div>
+</div>
 <div id="decreasing-triangle"
-class="section level2 tabset tabset-fade tabset-pills">
-<h2 class="tabset tabset-fade tabset-pills">Decreasing Triangle</h2>
-<div id="pattern-2" class="section level3">
-<h3>Pattern</h3>
+class="section level1 tabset tabset-fade tabset-pills" number="4">
+<h1 class="tabset tabset-fade tabset-pills"><span
+class="header-section-number">4</span> Decreasing Triangle</h1>
+<div id="pattern-3" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Pattern</h2>
 <pre><code>* * * * *
 * * * *
 * * *
 * *
 *</code></pre>
 </div>
-<div id="solution-2" class="section level3">
-<h3>Solution</h3>
+<div id="solution-3" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Solution</h2>
 <pre><code>int n=5;
 for (int i = 1; i &lt;= n; i++) {
     for (int j = i; j &lt;= n; j++) {
         System.out.print(&quot;* &quot;);
     }
-    System.out.println();
+System.out.println();
 }</code></pre>
 </div>
+</div>
+<div id="right-sided-triangle-1"
+class="section level1 tabset tabset-fade tabset-pills" number="5">
+<h1 class="tabset tabset-fade tabset-pills"><span
+class="header-section-number">5</span> Right Sided Triangle</h1>
+<div id="pattern-4" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Pattern</h2>
+<pre><code>  * * * * *
+    * * * *
+      * * *
+        * *
+          *</code></pre>
+</div>
+<div id="solution-4" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Solution</h2>
+<pre><code>int n=5;
+for (int i = 1; i &lt;= n; i++) {
+    for (int j = 1; j &lt;= i; j++) {
+        System.out.print(&quot;  &quot;);
+    }
+    for (int j = i; j &lt;= n; j++) {
+        System.out.print(&quot;* &quot;);
+    }
+System.out.println();
+}</code></pre>
 </div>
 </div>
 
@@ -468,7 +503,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3,h4,h5",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
@@ -477,7 +512,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = false;
+    options.showAndHide = true;
     options.smoothScroll = true;
 
     // tocify

@@ -1,11 +1,18 @@
-name: "My new website"
+name: "Star Patterns"
+title: Star Patterns
+author: "Jayant Rohila"
 output_dir: 'docs'
 output:
   html_document:
     theme: lumen
-    highlight: textmate
+    highlight: tango
+    fig_width: 5
+    fig_height: 3
+    pdf_document:
+    fig_caption: true
     toc: true
-    toc_depth: 5
+    toc_depth: 3
     toc_float:
-      collapsed: false
-      number_sections: true
+      collapsed: true
+      smooth_scroll: true
+    number_sections: true
